@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>트랜지션</title>
+<style>
+/*모든 div에 대해 일괄적으로 서로 마진값을 이용하여 떨어져 있게 하자*/
+div{
+	margin:20px;
+}
+#box{
+	width:100px;
+	height:100px;
+	background:red;
+	/*변화되는 시간을 늘려보자..*/
+	transition:width 1s;
+}
+#box:hover{
+	width:300px;
+}
+
+#box2{
+	width:100px;
+	height:100px;
+	background:#339900;
+	transition:background 2s;
+}
+
+#box2:hover{
+	background:#99ffcc;
+}
+
+#box3{
+	width:100px;
+	height:100px;
+	border:1px solid red;
+	transition:border 2s;
+
+}
+#box3:hover{
+	border:20px solid red;
+}
+
+#box4{
+	width:100px;
+	height:100px;
+	background-image:linear-gradient(to right, yellow, red);
+	transition:background-image 2s;
+}
+
+#box4:hover{
+	background-image:linear-gradient(to right, orange, #ff00ff);
+}
+
+</style>
+
+</head>
+<body>
+<pre>
+<h3>
+css3부터 프로그래밍에 의존하지 않고도 간단한 애니메이션을 구현할 수 있다.
+</h3>
+</pre>
+
+<div id="box"></div>
+
+<div id="box2"></div>
+
+<div id="box3"></div>
+
+<div id="box4"></div>
+
+</body>
+</html>

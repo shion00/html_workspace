@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          #box1{
+               width:200px;
+               height:200px;
+               background:url(https://img.hankyung.com/photo/202008/03.23481750.1.jpg);
+               background-size: 200px 200px;
+               margin:auto;
+               display:inline-block;
+          }
+          #mask1{
+               width:200px;
+               height:200px;
+               display:inline-block;
+               background-color:red;
+          }
+
+          #box1:hover #mask1{
+               animation:fadding 1s;
+               
+          }
+
+
+          #box2{
+               width:200px;
+               height:200px;
+               background:url(https://img.hankyung.com/photo/202008/03.23481750.1.jpg);
+               background-size: 200px 200px;
+               margin:auto;
+               display:inline-block;
+               transform:scalex(-1)
+          }
+
+          #mask2{
+               width:200px;
+               height:200px;
+               display:inline-block;
+               background-color:blue;
+          }
+
+          #box2:hover #mask2{
+               animation:fadding 1s;
+
+          }
+          
+          @keyframes fadding{
+               0%{opacity: 1;}
+               100%{opacity: 0;}
+          }
+
+     </style>
+
+</head>
+<body>
+     <div id="box1">
+          <div id="mask1"></div>
+     </div>         
+     <div id="box2">
+          <div id="mask2"></div>
+     </div>         
+
+</body>
+</html>

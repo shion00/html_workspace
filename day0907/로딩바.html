@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>로딩바</title>
+
+     <style>
+          /* 로딩바 스타일 정의 */
+          .loader{
+               border:16px solid #f3f3f3; /* 로딩 바 테두리 회색으로 */
+               width:150px;
+               height:150px;
+               border-top:16px solid #3498db; /*사각형의 위쪽만 색상 테두리*/
+               border-radius:50%;/*사각형의 모서리를 완만하게~~*/
+               transform:rotate(50deg);
+               animation:spin 1s linear infinite; /*실행할 대상 animation이름, 
+               1초간 과정을 진행하되, 끝없이.. ;*/
+          }
+
+          /* 물체를 회전시키는 에니메이션 
+          형식: 시작 from ~~ 끝 to 을 명시  
+          */
+
+          /*
+          @keyframes spin{
+               from{transform:rotate(0deg);}
+               to{transform:rotate(360deg);}
+          }
+          */
+
+          @keyframes spin{
+               0%{transform:rotate(0deg);}
+               100%{transform:rotate(360deg);}          
+          }
+
+     </style>
+
+</head>
+<body>
+          <!-- 모든 태그는 사각형 이므로, 동그란 원을 표현하려면 CSS로 변형시켜야 한다 -->
+          <div class="loader"></div>
+
+</body>
+</html>

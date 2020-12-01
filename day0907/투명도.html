@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>투명도</title>
+     <style>
+          #box{
+               width:200px;
+               height:200px;
+               background:url(https://img.hankyung.com/photo/202008/03.23481750.1.jpg);
+               background-size:200px 200px; /*width 200, height 200*/
+               margin:auto; /*양옆의 남는 공간 즉 마진을 양분하여 동일하게 배분하는 속성*/
+          }
+
+          #mask{
+               width:200px;
+               height:200px;
+               background:black; 
+          }
+          /* box에 hover시 mask의 opacity를 투명하게 처리 */
+
+          #box:hover #mask{
+               opacity: 0.8; /*1 완전 불투명, 0 완전 투명*/
+               /* opacity 투명도 */
+          }
+
+     </style>
+</head>
+<body>
+
+     <!-- 이미지 배경을 가진 박스 -->
+     <div id="box">
+          <!-- 이미지를 가릴 마스크 -->
+          <div id="mask"></div>
+     </div>
+     
+</body>
+</html>

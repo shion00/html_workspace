@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>실습</title>
+<style>
+#box1{
+	height: 200px;
+	position:absolute; 
+	left:0px;
+	top:100px;
+	animation-name:move;
+	animation-duration:5s;
+	animation-iteration-count:infinite; 
+	animation-direction:alternate; 
+}
+#ball{
+	height: 200px;
+	position:absolute; 
+	left:0px;
+	top:100px;
+	animation-name:bounce;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite; 
+	animation-direction:alternate; 
+}
+#wrapper{
+	position:absolute; 
+	left:0px;
+	top:300px;
+	width: 100px;
+	height: 10px;
+	animation-name:move;
+	animation-duration:5s;
+	animation-iteration-count:infinite; 
+	animation-direction:alternate; 
+}
+#shadow{
+	position:absolute; 
+	left:0px;
+	top:300px;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	animation-name:shadow;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite; 
+	animation-direction:alternate; 
+}
+
+@keyframes move{
+	from{
+		left:0px;
+	}
+	to{
+		left: 400px;
+	}
+}
+@keyframes bounce{
+	from{
+		top:400px;
+	}
+	to{
+		top:0px;
+	}
+}
+@keyframes shadow{
+	from{
+	}
+	to{
+		width: 30px;
+		height: 10px;
+	}
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div id="box1" >
+	<img id="ball" src="../images/ball.png" width="100px"/>
+</div>
+
+<div id="wrapper">
+	<div id="shadow"></div>
+</div>
+
+</body>
+</html>
